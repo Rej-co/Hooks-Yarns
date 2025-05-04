@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-...="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg" data-bs-theme="dark" id="navbar">
+        <div class="container-fluid">
+          <img src="./image/types-of-yarn-3.jpg" width="70" height="50" />
+          <a class="navbar-brand" href="#">Hooks&Yarns</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#categories"
+                  >CATEGORIES</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="account.html">ACCOUNT</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#help&information"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  HELP & INFORMATION
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#about">About Us</a></li>
+                  <li>
+                    <a class="dropdown-item" href="payment.html"
+                      >Payment Methods</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#shipping">Shipping</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#contact">Contact Us</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#ourguarantee"
+                      >Our Guarantee</a
+                    >
+                  </li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="icon-cart">
+              <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+              <p id="count">0</p>
+            </div>
+
+            <form class="d-flex" role="search">
+              <input
+                class="form-control bg-secondary"
+                type="search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-light" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8">
+              <!-- Carousel -->
+              <div
+                id="carouselExample"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="./image/crochet bralette.jpg"
+                      class="d-block w-100"
+                      alt="Image 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./image/crochet men shirt.webp"
+                      class="d-block w-100"
+                      alt="Image 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./image/white kini.jpg"
+                      class="d-block w-100"
+                      alt="Image 3"
+                    />
+                  </div>
+                </div>
+
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExample"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <!-- Content in the grid -->
+              <h2>HANDMADE WITH LOVE</h2>
+              <p>
+                Hooks & Yarns started off as a hobby and grew into a business
+                with a mission to deliver quality yarn and accessories at
+                competitive prices. The best possible customer service is always
+                provided, so that your knitting or crochet project can be a
+                success.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <nav class="navbar bg-body-tertiary">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+              <img
+                src="./image/hook in balls of yarn.webp"
+                alt="Logo"
+                width="70"
+                height="50"
+                class="d-inline-block align-text-top"
+              />
+              <p class="newarrival">NEW ARRIVALS</p>
+            </a>
+          </div>
+        </nav>
+
+        <div class="container mt-3">
+          <div class="row">
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714748952/crochet_men_shirt_dpri7j.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">MEN SHIRT</h5>
+                  <p class="card-text">$45.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714748939/grannysquare_skirt_yellow_black_a9j0vm.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GRANNY SQUARE SKIRT</h5>
+                  <p class="card-text">$25.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714748810/crochet_blanket_m3pqpd.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BROWN AND CREAM BLANKET</h5>
+                  <p class="card-text">$75.67</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747924/rufflehast_white_green_t3otmd.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RUFFLE HAT</h5>
+                  <p class="card-text">$20.99</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_pad,w_250,h_250/v1714747920/yarn_blanket_gugd13.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BLANKET YARN</h5>
+                  <p class="card-text">$5.99</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747916/rose_pink_hat_xrq54g.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">RUFFLE HAT</h5>
+                  <p class="card-text">$20.60</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747913/grey_color_toy_wun7vo.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">FUR KITTEN</h5>
+                  <p class="card-text">$10.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747909/mengranny_nxu3iy.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GRANNY SQUARE VEST</h5>
+                  <p class="card-text">$25.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747904/green_white_sweats_umszo6.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SIMPLE SWEATER</h5>
+                  <p class="card-text">$30.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747899/granny_square_skirt_ckuojj.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GRANNY SQUARE TWO PIECE</h5>
+                  <p class="card-text">$57.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747896/grannymenvest_jqepn3.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GRANNY SQUARE VEST</h5>
+                  <p class="card-text">$25.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747890/granny_halter_v77uvo.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">GRANNY SQUARE HALTER TOP</h5>
+                  <p class="card-text">$25.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_pad,w_250,h_250/v1714747854/fluffy_yarn_iljwyr.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">FLUFFY YARN</h5>
+                  <p class="card-text">$20.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747849/fiona_skirt_and_top_cucotb.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">FIONA TOP & SKIRT</h5>
+                  <p class="card-text">$50.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747846/crochet_sweats_kjs8pn.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">SWEATER</h5>
+                  <p class="card-text">$30.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747838/crochet_hexagon_shirt_rojalt.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">HEXAGON SHIRT</h5>
+                  <p class="card-text">$30.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747835/crochet_hook_set_tmzfmk.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">CROCHET HOOK SET</h5>
+                  <p class="card-text">$30.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747822/crochet_beanie_afocji.jpg"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BEANIE</h5>
+                  <p class="card-text">$10.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-6 col-lg-3 mb-3">
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747818/butterfly_crochet_r2srqx.png"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BUTTERFLY TOP</h5>
+                  <p class="card-text">$20.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="col-6 col-sm-6 col-md-6 col-lg-3 col-xl-3 col-xxl-3 mb-3"
+            >
+              <div class="card custom-card h-100">
+                <img
+                  src="https://res.cloudinary.com/dntv0bst8/image/upload/c_fill,w_250,h_250/v1714747784/bralette_brown_jbjnax.webp"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h5 class="card-title">BRALETTE TOP</h5>
+                  <p class="card-text">$30.00</p>
+                  <a href="cart.html" class="btn btn-secondary">Add to Cart</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="write"><h2>FOLLOW US</h2></div>
+
+        <div class="icons">
+          <!-- Facebook icon -->
+          <a
+            href="https://www.facebook.com/YourPage"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-facebook fa-2x"></i
+          ></a>
+          <!-- Instagram icon -->
+          <a
+            href="https://www.instagram.com/YourProfile"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-instagram fa-2x"></i
+          ></a>
+          <!-- Twitter icon -->
+          <a
+            href="https://twitter.com/YourProfile"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-twitter fa-2x"></i
+          ></a>
+          <!-- WhatsApp icon -->
+          <a
+            href="https://wa.me/YourPhoneNumber"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="fab fa-whatsapp fa-2x"></i
+          ></a>
+        </div>
+      </section>
+
+      <section id="about" style="margin-left: 15px">
+        <h2>About Us</h2>
+        <p>Why shop at Hooks&Yarns?</p>
+        <ul>
+          <li>
+            You get a 10-day return policy on all items, regardless of the
+            amount.
+          </li>
+          <li>Free shipping on orders over $100.</li>
+          <li>Fast delivery within 3-5 days for all items in stock.</li>
+          <li>100% secure online shopping.</li>
+          <li>Super friendly customer service.</li>
+          <li>Large selection of yarn and accessories at the best prices.</li>
+        </ul>
+        <p>
+          Hooks&Yarns' mission is to become your preferred supplier of
+          inspiration, yarn, and accessories.
+        </p>
+      </section>
+
+      <div class="containerred mb-3">
+        <h2 class="exempt">Save up to 50%</h2>
+        <h4 class="spared">
+          Receive our free newsletter and get inspiration, offers, and
+          discounts!
+        </h4>
+
+        <input
+          type="email"
+          id="inputPassword6"
+          class="form-control"
+          aria-describedby="passwordHelpInline"
+        />
+        <p id="passwordHelpInline" class="form-text"></p>
+        <button type="button" class="btn btn-dark">Subscribe</button>
+      </div>
+
+      <a href="#" class="btn btn-outline-primary">Go To Top</a>
+
+      <p>Copyright &copy; 2024 HooksnYarns</p>
+    </main>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,14 @@
+.container {
+    border: 2px #0e5aa1 dashed;
+    margin-top: 30px;
+    background-color: #dea13e;
+    padding: 1%;
+}
+.contents {  
+    letter-spacing: 1px;   
+}
+
+
+h6 {
+    padding-top: 10px;
+}

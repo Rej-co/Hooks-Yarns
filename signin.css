@@ -1,0 +1,19 @@
+ body{
+    background-color: #dea13e;
+}
+
+.container-fluid {
+    justify-items: center;
+}
+
+.contents {
+    border: 2px 0e5aa1 dashed;
+    letter-spacing: 1px;   
+    padding: 2%;
+    margin-top: 70px;
+    background-color: #dea13e;
+}
+
+h6 {
+    padding-top: 10px;
+}
